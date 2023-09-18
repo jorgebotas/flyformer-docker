@@ -97,6 +97,7 @@ logging.set_verbosity(logging.DEBUG)
 
 # Load token dictionary
 TOKEN_DICT = read_pickle(DATA_DIR / "token_dictionary.pickle")
+print(f"> Vocabulary size: {len(TOKEN_DICT)}")
 
 
 # ----- LOAD DATASET -----------------------------------------------------------
