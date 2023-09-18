@@ -16,9 +16,8 @@ ENV TORCH_SEED=42
 
 # Copy necessary files
 COPY requirements.txt .
-# Clone Geneformer repo
-# RUN git clone https://huggingface.co/ctheodoris/Geneformer
-COPY flyfomer /Geneformer
+# Install flyformer python package
+COPY flyfomer /flyformer
 
 # Update package repositories and install GCC
 RUN apt-get update && apt-get install -y gcc
@@ -27,7 +26,7 @@ RUN apt-get update && apt-get install -y gcc
 RUN pip install --no-cache-dir --upgrade pip
 RUN python -m pip install -r requirements.txt
 # Install Geneformer
-RUN python -m pip install ./Geneformer
+RUN python -m pip install ./flyformer
 
 WORKDIR /pretraining
 COPY . /pretraining
