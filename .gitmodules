@@ -1,6 +1,6 @@
-[submodule "flyformer"]
-	path = flyformer
-	url = https://github.com/jorgebotas/flyformer.git
 [submodule "flyformer-corpus"]
 	path = flyformer-corpus
 	url = https://github.com/jorgebotas/flyformer-corpus.git
+[submodule "flyformer"]
+	path = flyformer
+	url = https://github.com/jorgebotas/flyformer.git
