@@ -101,7 +101,7 @@ TOKEN_DICT = read_pickle(DATA_DIR / "token_dictionary.pickle")
 
 # ----- LOAD DATASET -----------------------------------------------------------
 print("> Loading dataset...")
-dataset = load_from_disk(next(DATA_DIR.glob("*.dataset"))
+dataset = load_from_disk(next(DATA_DIR.glob("*.dataset")))
 print(f"> {dataset.num_rows} examples loaded")
 
 
