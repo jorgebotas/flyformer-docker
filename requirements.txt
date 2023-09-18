@@ -26,3 +26,4 @@ seaborn
 
 # tokenizer
 ray==2.6.3
+tdigest
