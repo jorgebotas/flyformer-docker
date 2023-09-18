@@ -17,7 +17,7 @@ ENV TORCH_SEED=42
 # Copy necessary files
 COPY requirements.txt .
 # Install flyformer python package
-COPY flyfomer /flyformer
+COPY flyformer /flyformer
 
 # Update package repositories and install GCC
 RUN apt-get update && apt-get install -y gcc
