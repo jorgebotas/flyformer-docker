@@ -146,7 +146,7 @@ MODEL_PARAMETERS = {
 }
 
 # ----- TRAINING PARAMETERS ----------------------------------------------------
-batch_size = 12
+batch_size = 8
 n_saves_epoch = 8 # Number of saves per epoch
 TRAINING_PARAMETERS = {
     # Initial learning rate for Adam optimizer
