@@ -113,7 +113,7 @@ MODEL_PARAMETERS = {
     "model_type": "bert",
     # Number of hidden layers (transformer encoder units)
     # Each composed of self-attention and feed forward layers
-    "num_hidden_layers": 6,
+    "num_hidden_layers": 4,
     # Number of attention heads per hidden layer (4)
     "num_attention_heads": 4,
     # Vocabulary size of the model = #genes + 2 (<mask> and <pad> tokens)
