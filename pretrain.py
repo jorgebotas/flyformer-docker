@@ -65,7 +65,8 @@ def get_run_name(timezone: str = "US/Eastern") -> str:
     run += f"B-{get_training('per_device_train_batch_size')}__"
     run += f"LR-{get_training('learning_rate')}__"
     run += f"LS-{get_training('lr_scheduler_type')}__"
-    run += f"WU-{get_training('warmup_steps')}"
+    run += f"WU-{get_training('warmup_steps')}__"
+    run += f"VS-{len(TOKEN_DICT)}"
     return run
 
 def read_pickle(path: Path) -> dict:
