@@ -58,7 +58,7 @@ def get_run_name(timezone: str = "US/Eastern") -> str:
     datestamp = f"{str(date.year)[-2:]}.{date.month:02d}.{date.day:02d}_"
     datestamp += f"{date.strftime('%X').replace(':','.')}"
     run = f"{datestamp}__"
-    run += f"NL-{get_model('num_hidden_layers')}__"
+    run += f"NL-{get_model('num_hidden_ayers')}__"
     run += f"EMB-{get_model('hidden_size')}__"
     run += f"ID-{get_model('max_position_embeddings')}__"
     run += f"E-{get_training('num_train_epochs')}__"
@@ -115,7 +115,7 @@ MODEL_PARAMETERS = {
     "model_type": "bert",
     # Number of hidden layers (transformer encoder units)
     # Each composed of self-attention and feed forward layers
-    "num_hidden_layers": 4,
+    "num_hidden_layers": 6,
     # Number of attention heads per hidden layer (4)
     "num_attention_heads": 4,
     # Vocabulary size of the model = #genes + 2 (<mask> and <pad> tokens)
